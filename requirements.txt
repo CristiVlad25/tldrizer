@@ -1,2 +1,2 @@
 transformers[torch]
-tokenizers==0.10
+tokenizers==0.10.1
