@@ -1,5 +1,8 @@
 import streamlit as st
 from transformers import pipeline
+import os
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 st.write("# TLDR-izer")
 article = st.text_area('Text to be summarized:', height=200)
